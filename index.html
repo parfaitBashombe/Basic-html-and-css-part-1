@@ -1,159 +1,301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Modern Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="1.css" />
-    <title>SlamDunk | Community</title>
-    <meta name="description" content="A comprehensive modern basketball community and news portal." />
+
+    <title>SlamDunk | Basketball Community</title>
+    <meta
+      name="description"
+      content="A modern basketball community, news, debate, and culture platform."
+    />
   </head>
+
   <body>
     <!-- Top Navigation -->
     <header class="navbar">
-      <div class="logo-area">
-        <img src="drc.png" alt="drc flag" class="nav-logo" />
-        <span class="logo-text">SlamDunk</span>
+      <div class="nav-inner">
+        <a href="#" class="logo-area" aria-label="SlamDunk homepage">
+          <img src="drc.png" alt="DRC flag" class="nav-logo" />
+          <span class="logo-text">SlamDunk</span>
+        </a>
+
+        <nav class="nav-menu" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Profil</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="nav-cta">Join Community</a>
       </div>
-      <nav class="nav-menu">
-        <ul class="nav-links">
-          <li><a href="#" class="active">Accueil</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Profil</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <!-- Main Application Wrapper -->
-    <main class="page-container">
-      
-      <!-- Page Header / Hero -->
+    <main>
+      <!-- Hero -->
       <section class="hero-section">
-        <h1 class="hero-title">BASKETBALL <span class="accent-text">CULTURE</span></h1>
-        <p class="lead-text">
-          Welcome to SlamDunk, your ultimate destination for everything basketball. 
-          Dive deep into the culture, stats, and heated debates defining the modern era 
-          of the sport. Whether you're tracking the intense rivalries of the regular season 
-          or breaking down championship defensive schemes, we've got you covered with 
-          premium, inside access.
-        </p>
+        <div class="hero-bg-orb hero-orb-one"></div>
+        <div class="hero-bg-orb hero-orb-two"></div>
+
+        <div class="hero-inner">
+          <div class="hero-content">
+            <span class="eyebrow">DRC Basketball Culture</span>
+
+            <h1 class="hero-title">
+              The court.
+              <span>The culture.</span>
+              The conversation.
+            </h1>
+
+            <p class="lead-text">
+              SlamDunk brings fans, players, analysts, and creators into one
+              place — from heated debates and player stories to tactical
+              breakdowns, highlights, and community events.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#" class="btn btn-primary">Explore Stories</a>
+              <a href="#" class="btn btn-secondary">Start a Debate</a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <strong>24/7</strong>
+                <span>Community</span>
+              </div>
+              <div>
+                <strong>360°</strong>
+                <span>Game Analysis</span>
+              </div>
+              <div>
+                <strong>Local</strong>
+                <span>Basketball Voice</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Featured community topic">
+            <div class="panel-top">
+              <span class="live-dot"></span>
+              <span>Live Topic</span>
+            </div>
+
+            <div class="score-card">
+              <div>
+                <span>East</span>
+                <strong>104</strong>
+              </div>
+              <div class="versus">VS</div>
+              <div>
+                <span>West</span>
+                <strong>108</strong>
+              </div>
+            </div>
+
+            <h2>Who controls the modern game?</h2>
+
+            <p>
+              Pace, spacing, shooting gravity, defensive versatility, and
+              coaching adjustments are changing how fans understand basketball.
+            </p>
+
+            <div class="court-graphic">
+              <span class="ball"></span>
+            </div>
+          </aside>
+        </div>
       </section>
 
-      <!-- Layout Grid (Main Content + Sidebar) -->
-      <div class="content-layout">
-        
-        <!-- Primary Articles Area -->
-        <div class="main-articles">
-          
-          <article class="card premium-card">
-            <h2 class="card-heading">EAST VS WEST</h2>
-            <div class="card-body">
-              <p>
-                The historic rivalry between the Eastern and Western Conferences continues 
-                to highlight contrasting styles of play. While the East has historically 
-                reared hard-nosed defensive squads relying on methodical half-court execution, 
-                the West has long pushed the limits of the game's pace and perimeter shooting 
-                efficiency. In recent seasons, the talent distribution has shifted back and 
-                forth, resulting in heavily contested matchups that go the distance. 
-                With rising star power evenly split across both seaboards, the battle for 
-                the NBA Championship is more unpredictable than ever. Fans can expect a 
-                grueling playoff stretch as top seeds clash over regional supremacy.
-              </p>
-            </div>
-          </article>
-
-          <!-- Grid of Sub-Topics -->
-          <div class="cards-grid">
-            <article class="card team-card">
-              <div class="card-image-wrap lakers-img"></div>
-              <div class="card-content">
-                <span class="badge team-badge">Team</span>
-                <h3 class="card-subheading">LAKERS</h3>
-                <p>
-                  The Los Angeles Lakers remain one of the most storied franchises in all of professional sports. 
-                  Donning the Purple and Gold, the team carries the immense pressure of living up to the legacies 
-                  of legends like Magic Johnson and Kobe Bryant. In the modern era, the Lakers' front office faces 
-                  the constant challenge of surrounding their superstar talent with the right mix of veteran experience 
-                  and youthful energy. As they seek yet another banner to hang in the rafters, every matchup in 
-                  the competitive Western Conference is crucial for maintaining momentum.
-                </p>
-              </div>
-            </article>
-
-            <article class="card player-card">
-              <div class="card-content">
-                <span class="badge player-badge">Player Profile</span>
-                <h3 class="card-subheading">Stephen Curry</h3>
-                <p>
-                  Stephen Curry has fundamentally altered how the game of basketball is played. 
-                  Regarded as the greatest shooter in NBA history, Curry's unprecedented range 
-                  and off-ball movement force opposing defenses into impossible split-second 
-                  decisions. His gravity on the court opens up scoring opportunities for his 
-                  entire team, cementing his status as a generational offensive engine.
-                </p>
-              </div>
-            </article>
-
-            <article class="card player-card">
-              <div class="card-content">
-                <span class="badge player-badge">Player Profile</span>
-                <h3 class="card-subheading">Lebron James</h3>
-                <p>
-                  LeBron James continues to defy the limits of longevity and athleticism. 
-                  An unmatched blend of size, court vision, and basketball IQ makes him 
-                  a perennial threat to control every facet of the game. With four 
-                  championship rings to his name, LeBron's ongoing impact in defining 
-                  championship runs remains a pivotal storyline every single season.
-                </p>
-              </div>
-            </article>
-
-            <article class="card general-card">
-              <div class="card-content">
-                <span class="badge">Analysis</span>
-                <h3 class="card-subheading">Opponent</h3>
-                <p>
-                  Analyzing the opponent's strategy is half the battle on the court. 
-                  In today's highly analytical game, scouting reports are meticulously crafted 
-                  to identify defensive liabilities and predictable offensive tendencies. 
-                  Whether it's exploiting a big man in a switch with a lightning-quick guard 
-                  or overloading the strong side to stifle a post-up threat, tactical adjustments 
-                  dictate the flow of tightly contested matches. Great teams must be versatile 
-                  enough to adapt their game plan mid-flight while ruthlessly punishing the 
-                  mistakes of their adversaries. This constant chess match between coaching staffs 
-                  often proves to be the deciding factor in clutch, late-game scenarios.
-                </p>
-              </div>
-            </article>
-          </div>
+      <!-- Main Application Wrapper -->
+      <section class="page-container">
+        <div class="section-heading">
+          <span class="eyebrow">Latest Discussions</span>
+          <h2>Stories shaping the game</h2>
+          <p>
+            Read, react, comment, and follow the biggest conversations across
+            teams, players, rivalries, and basketball culture.
+          </p>
         </div>
 
-        <!-- Sidebar / Publicity -->
-        <aside class="sidebar">
-          <div class="promo-widget">
-            <span class="badge promo-badge">Publicity</span>
-            <h3 class="widget-title">Sponsors & Events</h3>
-            <p>
-              Don't miss out on securing the latest premium performance footwear and exclusive
-              apparel collections worn by the pros. Upgrade your game both on and off the court.
-            </p>
-            <button class="btn btn-primary">Learn More</button>
-          </div>
-        </aside>
+        <!-- Layout Grid -->
+        <div class="content-layout">
+          <!-- Primary Articles Area -->
+          <div class="main-articles">
+            <article class="card premium-card">
+              <div class="premium-content">
+                <div>
+                  <span class="badge gold-badge">Featured Analysis</span>
+                  <h2 class="card-heading">East vs West</h2>
+                  <p>
+                    The rivalry between Eastern and Western basketball styles
+                    continues to create some of the most intense debates in the
+                    sport. One side often values physical defensive structure,
+                    while the other pushes tempo, spacing, transition pressure,
+                    and perimeter shot creation.
+                  </p>
+                  <p>
+                    Today, that line is no longer so simple. Great teams need
+                    both discipline and speed. The championship conversation is
+                    now about adaptability: who can defend multiple actions,
+                    punish mismatches, and stay composed when the game slows
+                    down late?
+                  </p>
+                </div>
 
-      </div>
+                <div class="premium-visual">
+                  <span class="court-line top"></span>
+                  <span class="court-line middle"></span>
+                  <span class="court-line bottom"></span>
+                  <span class="premium-ball"></span>
+                </div>
+              </div>
+            </article>
+
+            <div class="cards-grid">
+              <article class="card article-card team-card">
+                <div class="article-visual lakers-visual">
+                  <span>LA</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge team-badge">Team</span>
+                  <h3 class="card-subheading">Lakers</h3>
+                  <p>
+                    A franchise built on legacy, pressure, expectation, and star
+                    power. Every season becomes a test of chemistry, leadership,
+                    depth, and the ability to perform under the brightest
+                    lights.
+                  </p>
+                  <a href="#" class="read-link">Read team story</a>
+                </div>
+              </article>
+
+              <article class="card article-card player-card">
+                <div class="article-visual curry-visual">
+                  <span>30</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge player-badge">Player Profile</span>
+                  <h3 class="card-subheading">Stephen Curry</h3>
+                  <p>
+                    Curry changed the geometry of basketball. His movement,
+                    shooting range, and off-ball gravity force defenses to
+                    stretch farther than ever before.
+                  </p>
+                  <a href="#" class="read-link">View profile</a>
+                </div>
+              </article>
+
+              <article class="card article-card player-card">
+                <div class="article-visual lebron-visual">
+                  <span>23</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge player-badge">Player Profile</span>
+                  <h3 class="card-subheading">LeBron James</h3>
+                  <p>
+                    LeBron’s longevity, court vision, physical dominance, and
+                    basketball intelligence continue to make him one of the most
+                    discussed players in the game.
+                  </p>
+                  <a href="#" class="read-link">View profile</a>
+                </div>
+              </article>
+
+              <article class="card article-card general-card">
+                <div class="article-visual analysis-visual">
+                  <span>X/O</span>
+                </div>
+
+                <div class="card-content">
+                  <span class="badge analysis-badge">Tactical Room</span>
+                  <h3 class="card-subheading">Opponent Analysis</h3>
+                  <p>
+                    Modern scouting is a chess match. Coaches hunt weak points,
+                    attack switching schemes, overload defensive zones, and
+                    force opponents into uncomfortable late-game decisions.
+                  </p>
+                  <a href="#" class="read-link">Open breakdown</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="promo-widget">
+              <span class="badge promo-badge">Publicity</span>
+              <h3 class="widget-title">Sponsors & Events</h3>
+              <p>
+                Promote tournaments, training camps, footwear drops, creator
+                events, and local basketball opportunities.
+              </p>
+              <a href="#" class="btn btn-primary full-width">Learn More</a>
+            </div>
+
+            <div class="side-card">
+              <h3>Trending Now</h3>
+
+              <ul class="trend-list">
+                <li>
+                  <span>01</span>
+                  <a href="#">Best young guards to watch this season</a>
+                </li>
+                <li>
+                  <span>02</span>
+                  <a href="#">How spacing changed modern offense</a>
+                </li>
+                <li>
+                  <span>03</span>
+                  <a href="#">Community debate: defense or shooting?</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="newsletter-card">
+              <h3>Get weekly basketball stories</h3>
+              <p>
+                No noise. Just the best debates, stories, and community updates.
+              </p>
+
+              <form class="newsletter-form">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  aria-label="Email address"
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer Area -->
+    <!-- Footer -->
     <footer class="main-footer">
       <div class="footer-inner">
         <div class="footer-brand">
           <h4>SlamDunk</h4>
-          <p>The ultimate basketball community.</p>
+          <p>
+            The basketball community for stories, debates, culture, and
+            analysis.
+          </p>
         </div>
+
         <ul class="footer-nav">
           <li><a href="#">Connect</a></li>
           <li><a href="#">Disconnect</a></li>
@@ -162,6 +304,7 @@
           <li><a href="#">Follow</a></li>
         </ul>
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2026 SlamDunk Community. All Rights Reserved.</p>
       </div>
